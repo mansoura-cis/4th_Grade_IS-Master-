@@ -8,7 +8,7 @@ __من يريد ان يساعد هنا يتواصل معى باذن الله __
 __لو كنت عايز تعمل __
 </br>
 
- <button class = "markdown-button" href="https://minhaskamal.github.io/DownGit/#/home" type="introbutton">Download</button>
+ <button class = "markdown-button" onclick="https://minhaskamal.github.io/DownGit/#/home" type="introbutton">Download</button>
  
  
 # 4th_Grade_IS-Master-
