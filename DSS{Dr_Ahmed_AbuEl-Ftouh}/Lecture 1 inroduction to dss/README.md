@@ -18,6 +18,7 @@
 |Strategic | Uncertinaty | Unstructured|
 |management|Risk| Semi-Structured|
 |Operational |Certain| Structured|
+
 ![](PIC/1.PNG)
 
 - Every level can have the 3 level of Dicisions but the dependancy of Predicton on the top management is the highest
@@ -25,8 +26,8 @@
 ---
 ![](PIC/2.PNG)
 ---
-![](PIC/3.PNG)
-![](PIC/4.PNG)
+![](PIC/3.png)
+![](PIC/4.png)
 
 
 
