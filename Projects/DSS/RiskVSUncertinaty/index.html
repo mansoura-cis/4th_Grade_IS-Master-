@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="bootstrap/bootstrap.min.css" rel="StyleSheet" />
+    <link href="bootstrap/Site.css" rel="StyleSheet" />
+
+    <script src="Scripts/Tables.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-xs" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+            <a class="navbar-brand" href="#"><b>Ahmed</b> Khalil DSS</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <div class="wrapper btn btn-success">
+                        <div class="toggle_radio">
+                            <input type="radio" class="toggle_option" id="first_toggle" name="Level">
+                            <input type="radio" checked class="toggle_option" id="second_toggle" name="Level">
+                            <label for="first_toggle"><p>Stratigic Level</p></label>
+                            <label for="second_toggle"><p>Management Level</p></label>
+                            <div class="toggle_option_slider">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li style="padding: 10px;">
+                    <input type="number" placeholder="Alternatives " onchange="addTable()" width="100" class="text-primary" Id="Alt" />
+                    <input type="number" placeholder="SON " width="100" onchange="addTable()" class="text-primary" Id="Son" />
+
+
+                </li>
+                <li>
+                    <input type="button" class="btn btn-success" onclick="ProfitOpt()" value="Profit" />
+                    <input type="button" class="btn btn-danger" onclick="Cost()" value="Cost" />
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <div class="row">
+
+        <div class="col-md-8">
+            <div id="Env" class="table-responsive">
+
+            </div>
+        </div>
+        <div class="col-md-2">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th> <img src="images/optimistic.gif" class="img-responsive"></th>
+                        <th> <img src="images/tenor.gif" class="img-responsive" style="width: 70%;"></th>
+                    </tr>
+                </thead>
+                <tbody id="Sbody">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-1">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th> <img src="images/Regret.gif" class="img-responsive"></th>
+                    </tr>
+                </thead>
+                <tbody id="Mbody">
+                    <diV></diV>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

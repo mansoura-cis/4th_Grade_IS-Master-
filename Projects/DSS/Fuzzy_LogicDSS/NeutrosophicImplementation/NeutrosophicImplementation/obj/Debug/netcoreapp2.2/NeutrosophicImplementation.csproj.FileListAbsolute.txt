@@ -1,0 +1,3 @@
+D:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\NeutrosophicImplementation\NeutrosophicImplementation\obj\Debug\netcoreapp2.2\NeutrosophicImplementation.csproj.CoreCompileInputs.cache
+D:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\NeutrosophicImplementation\NeutrosophicImplementation\obj\Debug\netcoreapp2.2\NeutrosophicImplementation.AssemblyInfoInputs.cache
+D:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\NeutrosophicImplementation\NeutrosophicImplementation\obj\Debug\netcoreapp2.2\NeutrosophicImplementation.AssemblyInfo.cs

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeutrosophicImplementation", "NeutrosophicImplementation\NeutrosophicImplementation.csproj", "{291C57DA-A7C9-44F3-9C8F-CFBA16E99735}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{291C57DA-A7C9-44F3-9C8F-CFBA16E99735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291C57DA-A7C9-44F3-9C8F-CFBA16E99735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291C57DA-A7C9-44F3-9C8F-CFBA16E99735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291C57DA-A7C9-44F3-9C8F-CFBA16E99735}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {709D2CB0-22A5-40B8-B9C3-0D13670B4623}
+	EndGlobalSection
+EndGlobal

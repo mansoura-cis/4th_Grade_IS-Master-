@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="bootstrap/bootstrap.min.css" rel="StyleSheet" />
+    <link href="bootstrap/Site.css" rel="StyleSheet" />
+
+    <script src="Scripts/Tables.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-xs" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+            <a class="navbar-brand" href="#"><b>Ahmed</b> Khalil DSS</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <div class="wrapper btn btn-success">
+                        <div class="toggle_radio">
+                            <input type="radio" class="toggle_option" id="first_toggle" name="Level">
+                            <input type="radio" checked class="toggle_option" id="second_toggle" name="Level">
+                            <label for="first_toggle"><p>Stratigic Level</p></label>
+                            <label for="second_toggle"><p>Management Level</p></label>
+                            <div class="toggle_option_slider">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li style="padding: 10px;">
+                    <input type="number" placeholder="Alternatives " onchange="addTable()" width="100" class="text-primary" Id="Alt" />
+                    <input type="number" placeholder="SON " width="100" onchange="addTable()" class="text-primary" Id="Son" />
+
+
+                </li>
+                <li>
+                    <input type="button" class="btn btn-success" onclick="ProfitOpt()" value="Profit" />
+                    <input type="button" class="btn btn-danger" onclick="Cost()" value="Cost" />
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <div class="row">
+
+        <div class="col-md-12">
+            <div id="Env" class="table-responsive">
+                <table class="table table-responsive table-striped">
+                    <thead>
+                        <tr>
+                            <th>price/year</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6</td>
+                            <td><input type="text" id="_11" width="100%"></td>
+                            <td><input type="text" id="_12" width="100%"></td>
+                            <td><input type="text" id="_13" width="100%"></td>
+                            <td><input type="text" id="_14" width="100%"></td>
+                            <td><input type="text" id="_15" width="100%"></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><input type="text" id="_21" width="100%"></td>
+                            <td><input type="text" id="_22" width="100%"></td>
+                            <td><input type="text" id="_23" width="100%"></td>
+                            <td><input type="text" id="_24" width="100%"></td>
+                            <td><input type="text" id="_25" width="100%"></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><input type="text" id="_31" width="100%"></td>
+                            <td><input type="text" id="_32" width="100%"></td>
+                            <td><input type="text" id="_33" width="100%"></td>
+                            <td><input type="text" id="_34" width="100%"></td>
+                            <td><input type="text" id="_35" width="100%"></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><input type="text" id="_41" width="100%"></td>
+                            <td><input type="text" id="_42" width="100%"></td>
+                            <td><input type="text" id="_43" width="100%"></td>
+                            <td><input type="text" id="_44" width="100%"></td>
+                            <td><input type="text" id="_45" width="100%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

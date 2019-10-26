@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="bootstrap/bootstrap.min.css" rel="StyleSheet" />
+    <link href="bootstrap/Site.css" rel="StyleSheet" />
+    <script src="Scripts/AHP.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-xs" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+            <a class="navbar-brand" href="#"><b>Ahmed</b> Khalil DSS AHP</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                <li style="padding: 10px;">
+                    <input type="number" placeholder="Criteria " onchange="buildingBlocks(getInt('Cri'), getInt('Alt'))" width="100" class="text-primary" Id="Cri" />
+                    <input type="number" placeholder="Alternatives " width="100" onchange="buildingBlocks(getInt('Cri'), getInt('Alt'))" class="text-primary" Id="Alt" />
+                </li>
+                <li>
+                    <input type="button" class="btn btn-success" onclick="start()" value="Start" />
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <div id="sln">
+
+    </div>
+
+</body>
+
+</html>
