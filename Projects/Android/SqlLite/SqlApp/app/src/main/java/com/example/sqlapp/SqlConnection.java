@@ -56,7 +56,12 @@ public class SqlConnection extends SQLiteOpenHelper {
     public void UpadateStudent(String id , String name , String email,String pass  )
     {
        SQLiteDatabase db = this.getWritableDatabase();
-       db.execSQL("update  students set  name=" +name + ",email=" +email+ ",pass="+pass+"where id="+id);
+       //db.execSQL("update students set  name=" +name + ",email=" +email+ ",pass="+pass+"where id="+id);
+        ContentValues values = new ContentValues();
+        values.put("name", name);
+        values.put("email", email);
+        values.put("pass", pass);
+        db.update("students", values, "id", null);
     }
     public  void DeleteStudent(String Id)
     {
