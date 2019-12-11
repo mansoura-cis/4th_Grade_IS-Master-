@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText name , email, pass;
+    EditText id , name , email, pass;
     TextView result;
      SqlConnection db;
 
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.editmail);
         pass = findViewById(R.id.editpass);
         result= findViewById(R.id.textshow);
+        id = findViewById(R.id.editText5);
          db = new SqlConnection(this);
     }
 
@@ -35,6 +36,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void InsertStudent(View view) {
         db.insertDB(name.getText().toString(), email.getText().toString(), pass.getText().toString());
-        Toast.makeText(MainActivity.this,"OK",Toast.LENGTH_SHORT ).show();
+        Toast.makeText(MainActivity.this,"Inserted Successfully",Toast.LENGTH_SHORT ).show();
+
+    }
+
+    public void UpdateStudent(View view) {
+        db.UpadateStudent(id.getText().toString(), name.getText().toString() , email.getText().toString(), pass.getText().toString());
+        Toast.makeText(MainActivity.this,"Updated Successfully",Toast.LENGTH_SHORT ).show();
+
+
+    }
+
+    public void deleteStudent(View view) {
+        db.DeleteStudent(id.getText().toString());
+        Toast.makeText(MainActivity.this,"Deleted Successfully",Toast.LENGTH_SHORT ).show();
+
     }
 }
