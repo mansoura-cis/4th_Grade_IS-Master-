@@ -16,5 +16,11 @@ This Repository for studying the Last year of IS in Mansoura University Containi
  <button class = "markdown-button" type="introbutton">[SEE RECIPE][1]</button>
  </center>
 
+ - The Oral Practical Table
+ - ![](OPET.jpg)
+
+ - The Exam Table 
+ - ![](FirstTermET.jpg)
+
  [1]: /recipes/braised-lamb-shank
  

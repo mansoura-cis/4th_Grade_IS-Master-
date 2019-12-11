@@ -13,7 +13,6 @@
         android:layout_marginLeft="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/background"
         android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,19 +31,19 @@
                 android:id="@+id/txtname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name" />
+                android:text="@string/name" />
 
             <TextView
                 android:id="@+id/txtPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Password" />
+                android:text="@string/password" />
 
             <Button
                 android:id="@+id/BackBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Back"
+                android:text="@string/back"
                 android:onClick="Backbtn"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
