@@ -12,6 +12,6 @@
 
 
 ---
-## Theis Course Is Indrotuced by Dr : Mohammad El-Hosieny
+## This Course Is Indrotuced by Dr : Mohammad El-Hosieny
 ### @AhmedKhalil contribution 2019/2020
 
