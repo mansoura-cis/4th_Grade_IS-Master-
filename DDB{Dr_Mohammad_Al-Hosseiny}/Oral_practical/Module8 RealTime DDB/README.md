@@ -91,4 +91,69 @@
       - __Flexible__ :  scheduler that can deal with __unpredictable events__. 
 
 ## __Priority-Based Scheduling__
-• Conventional scheduling algorithms aims at balancing the number of CPU-bound and I/O bound jobs to maximize system utilization and throughput • Real-Time tasks need to be scheduled according to their criticalness and timeliness • Real-Time system must ensure that the progress of higher-priority tasks (ideally) is never hindered by lower-priority tasks.
+ -  Conventional scheduling algorithms aims at __balancing__ the number of __CPU-bound and I/O bound__ jobs to maximize system __utilization and throughput__ - Real-Time tasks need to be scheduled according to their __criticalness and timeliness__ 
+ - Real-Time system must ensure that the progress of __higher-priority__ tasks __(ideally) is never hindered__ by lower-priority tasks.
+### __Priority-Based Scheduling Methods__ 
+-  __Earliest-Deadline-First (EDF)__: 
+   - the task with the current closest __(earliest)__ deadline is assigned the highest priority in the system and executed next 
+ - __Value-Functions__ : __highest value (benefit) first__ 
+   - the scheduler is required to __assign priorities__ as well as defining the system values of completing each task at any instant in time.
+ - __Value-Density (VD):__ __highest (value/computation) first__
+    - The scheduler tends to select the tasks that __earn more value per time__ unit they consume 
+    - It is a __greedy technique__ since it always schedules that task that has the __highest expected value__ within the shortest possible time unit. 
+ - __Complex functions of deadline__, value and slack time.
+
+## __Concurrency Control in Real Time DDB__
+> Ensures data is __accurate__ in a real-time distributed system
+-  Two main approaches: 
+   -  Prevent Collisions __(Pessimistic)__ 
+   - Detect Collisions and Respond __(Optimistic)__
+
+ - __Pessimistic Real-time Concurrency Control__
+    - __Two-Phase Locking:__ 
+      -  Transactions acquire __locks on data__ 
+      -  After transaction completed, locks are removed. 
+      -  Ensures that data integrity __isn’t compromised__.
+      -  Disadvantages to 2PL: 
+         -  Don’t scale well to real time distributed systems 
+         -  Difficult to maintain locks at different locations 
+         - Problems inherent to locking multiplied by number of sites
+ - __Optimistic Concurrency Control__ OCC:
+    - Assumed that collisions won’t occur 
+    - Few or no read restrictions 
+    - Initial writing takes place on copy of data 
+    - Course of action can be decided based on collision
+Optimistic Concurrency Control
+    - __Disadvantages to OCC:__ • The less servers, the more likely collisions  
+    - Collisions always cause rollbacks 
+    - Time wasted while restarting transactions
+Variations on CC
+ - __Neither OCC nor PCC perfect for RTDDBS__ 
+   -  Variations/Augmentations frequent: 
+      - DHP-2PL 
+      - OCC Wait-50
+## __Replication Strategies in Real-Time Distributed Databases__
+ - Replication 
+   - Deadlines must be met 
+   - Fault tolerance 
+   - Failure Transparency 
+   - Replication helps maintain __Quality of Service__ and Data Freshness
+
+|Eager Update| Lazy Update|
+|:-|:-|
+|Replicas updated as transaction happens.|Replicas updated after transaction committed.|
+|High response times from clients.|Chance for inconsistency.|
+|Locked longer.||
+|High Overhead||
+
+---
+|Update Anywhere | Primary Copy|
+|:-|:-|
+|Any replica can update other replicas.|One replica designated as “server”.|
+|Good for fault tolerance.|Good for read-only transactions.|
+|High synching and update times.|Restarts at server mean long waits and missed deadlines|
+
+- __Alternative: Partial Replication__
+  - JITRTR: Replicate as needed. 
+  - Only parts of the database replicated to cut down on overhead. 
+  -  Works best in static system
