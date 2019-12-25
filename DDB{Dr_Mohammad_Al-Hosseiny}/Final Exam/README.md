@@ -35,9 +35,23 @@
      - SOA (Coarse Grained Services) WSDL(SOAP/HTTP) => Microsoft WCF
      - Microservice Architecture (Fine Grained Services) => Dotnet MCS (The Best Choice in Real world Enterprise Challenges)
 
+> In Distributed System the Distribution must be Transparent from users to solve the complexity and Security so let's discover the Transparency models :
+> ![](../../PICS/18.PNG)
+
+## Distributed Database
+
+ > It is a system to process a __Unit of execution__ (a transaction)in a distributed manner.
+
+ > That is, a __transaction__ can be executed by __multiple networked computers__ in a __unified manner__.
+
+ > __A distributed database (DDB)__ is a collection of multiple __logically interrelated databases__ distributed over a computer network 
+ 
+ > __distributed database management system__(DDBMS) a software system that manages a distributed database while making the distribution transparent to the user.
+## So DDBS = DDB + DDBMS.
 
 
 # Real Time Distributed Database 
+
 > **_Real-Time Data Base System_** can be defined as those computing systems that are designed to operate in a __timely manner__.
 ![](../../PICS/1.png)
 - It must perform certain actions within specific __timing constrains__ (producing results while meeting predefined deadlines)
