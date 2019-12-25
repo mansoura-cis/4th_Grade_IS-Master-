@@ -17,7 +17,26 @@
 
 # Some of Studies
 
+# Intro To DDB
 ---
+## Distributed Systems:
+> A __distributed system__ is: A collection of __independent computers__ that appears to its users as a __single coherent system__.
+![](../../PICS/17.PNG)
+
+> If you really need to know about the Generation of Distributed Systems:
+
+ - Databased Architictures
+      - Distributed DB
+ - Software Based
+    - RPC, gRPC => Microsoft Blazor Engine
+    - REST Softwares (GET , POST , Delete ,PUT) HTTP Based Methods=> Dotnet APIS
+    - CORBA (Broker Based)
+  - Process Based
+     - SOA (Coarse Grained Services) WSDL(SOAP/HTTP) => Microsoft WCF
+     - Microservice Architecture (Fine Grained Services) => Dotnet MCS (The Best Choice in Real world Enterprise Challenges)
+
+
+
 # Real Time Distributed Database 
 > **_Real-Time Data Base System_** can be defined as those computing systems that are designed to operate in a __timely manner__.
 ![](../../PICS/1.png)
