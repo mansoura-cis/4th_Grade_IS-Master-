@@ -15,7 +15,7 @@
 | Big Data |
 
 
-# Some of Studies
+# Some of Studies & Contributions
 
 # Intro To DDB
 ---
