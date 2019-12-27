@@ -47,7 +47,50 @@
  > __A distributed database (DDB)__ is a collection of multiple __logically interrelated databases__ distributed over a computer network 
  
  > __distributed database management system__(DDBMS) a software system that manages a distributed database while making the distribution transparent to the user.
-## So DDBS = DDB + DDBMS.
+
+## So DDBS = DDB + DDBMS
+
+## The Concurrency control Methods for DDB (The Distributed Environment ):-
+
+- Locking (Pessimistic approach )
+  - Majority
+  - Biased (Shared Read/ Exclusive Write Locks)
+  - 2 Phase Locking
+- The Timestamp Ordering
+- The Optimistic Approach
+- Hybrid
+
+## Majority 
+
+> Local lock manager at each site administrates lock and unlock requests for data item stored at that site.
+
+
+### UnReplicated data:
+
+- Let (S) to be the site where data item (Q) are to be used for Read or Write
+
+- When Transaction T need to lock the Q it sends to S (The Lock manager)
+
+- If Q is locked in an incompatible mode, then the request is delayed until it can be granted.
+- if Q can be granted, the local manager sends a message back to lock the item .
+
+### Replicated Data:
+
+- Q = Replicated item  , n the sites contain Q
+- The Request must be sent to more half of the sites contain Q (The Request Messages >= 1/2 N)
+- The T can not obtain Q until the majority of N grant the lock
+- When Read , from one site -- When Write , performing Writes in all of the N.
+
+### Benefits 
+> It Can be used when some sites are unavailable
+
+### Drawbacks
+> Requires __2(n/2+1)__ messages for handling the __locks__ and __(n/2+1)__ to handle __unlocks__
+
+> Potential for __Deadlock__ even with single item , each 3 transactions can have locks on 1->3 rd of the replicas of a data
+
+
+## Biased Protocol
 
 
 # Real Time Distributed Database 
@@ -57,7 +100,9 @@
 - It must perform certain actions within specific __timing constrains__ (producing results while meeting predefined deadlines)
 
 > __*Real-Time Distributed Data Base System*__ can also be defined as Traditional Distributed Databases that uses an extension to give additional power to yield __reliable response__.
+
 ![](../../PICS/2.jpg)
+
 - Distributed Databases with the __added constraint__ of completing operations within a __certain amount of time__ to accurately reflect the outside world.
 ## Strategies must consider system attributes
 - Hard or Soft
@@ -92,11 +137,12 @@
 |• __Example:__ <li> Control tower notifying planes where to land in inclement weather</li> <li>  Burglary System dispatch</li> |• Example: Checkout line growing in a grocery store.|
 
 ## __Design Paradigms__
- - __Time-Triggered (TT)__
-   - Systems are initiated as __predefined instances__ 
-   - Assessments of resource requirements and resource availability is required 
-   - TT architecture can provide __predictable behavior__ due to its pre-planed execution pattern.
- - __Event-Triggered (ET)__
+
+- __Time-Triggered (TT)__
+  - Systems are initiated as __predefined instances__ 
+  - Assessments of resource requirements and resource availability is required 
+  - TT architecture can provide __predictable behavior__ due to its pre-planed execution pattern.
+- __Event-Triggered (ET)__
    -  Systems are initiated in __response__ to the occurrence of particular __events__ that are possibly caused by the environment
    - The resource-need  assessments in ET architecture is  usually __probabilistic__ 
    - ET is not as reliable as TT but provides more flexibility and ideal for more classes of applications
@@ -138,7 +184,7 @@
     - __Dynamic__  : Assumes __unpredictable__ task-arrival times 
       -  Attempts to schedule tasks __dynamically upon arrival__ 
       -  Dynamically computes and assigns a priority value to each task 
-      - Decisions are based on task characteristics and the current state of the system 
+    - Decisions are based on task characteristics and the current state of the system 
       - __Flexible__ :  scheduler that can deal with __unpredictable events__. 
 
 ## __Priority-Based Scheduling__
