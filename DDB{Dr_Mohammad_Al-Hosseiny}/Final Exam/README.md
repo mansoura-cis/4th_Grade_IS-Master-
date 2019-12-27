@@ -6,7 +6,7 @@
 
 |Slides|
 |:--:|
-| Intro To DBMS|
+| Intro To DDB|
 | Transparency |
 |DDB Design|
 | Concurrency Control|
