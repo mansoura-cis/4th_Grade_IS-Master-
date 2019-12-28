@@ -4,15 +4,15 @@
  Dr Mohammad El-Hosieny ordered that Final Exam Contain only the 7 chapters 
 
 
-|Slides|
-|:--:|
-| Intro To DDB|
-| Transparency |
-|DDB Design|
-| Concurrency Control|
-| DDB Security|
-| Real time DB |
-| Big Data |
+|Slides| Contributions|
+|:--:|:--|
+| Intro To DDB|Contributed|
+| Transparency |Non|
+|DDB Design|Non|
+| Concurrency Control|Non|
+| DDB Security|Contributed|
+| Real time DB |Contributed|
+| Big Data |Contributed|
 
 
 # Some of Studies & Contributions
@@ -91,7 +91,123 @@
 
 
 ## Biased Protocol
+> There are 2 types of lock (Shared => __Read Lock__ , Exclusive => __Write Lock__  ) and they are not manipulated the same so it's Biased.
 
+> __The Shared Lock__ : When The Local Transaction Manager need to read a data Q then it sends a request to __only one site__ from the replicas sites=> One Request (Advantage)
+```
+Shared Lock بتقفل منطقة واحدة بس عشان كده بتطلب 
+ one request per Transaction Read
+```
+> __The Exclusive Lock__:  When The Local Transaction Manager need to Write a data Q then it sends a request to __all the sites__ that contain Q => More overhead on Writes Requests (Disadvantage)
+```
+Execlusive Lock بتقفل كل المناطق اللى بتحتوى على الداتا بس عشان كده بتطلب 
+Every Replica contain Q it locks the item
+```
+
+# DDBMS Security
+
+## Data Security
+> Protect Data from Unauthorized Access
+> There are 2 main Aspects:
+
+### 1- Data Protection
+> Achieved Using data encryption Technique
+ - Uses Encryption/Decryption techniques (Key Generators =>Public/Private Keys => RSA ,GPG ,MD5 , HMAC256 .....)
+
+```
+بحمى أصل البيانات من ان اللى مش مسموح له القراءة تكون اليانات اللى هيحصل عليها متشفرة مش هيعرف يفكها الا بالمفتاح اللى هو مجموعة من الحروف اللى مع الأجهزة بس المسموح لها القراءة 
+```
+
+> Prevents the physical content to be understood by unauthorized users.
+
+### 2- Authorization Control
+> Only authorized users perform operations they are allowed to on database objects
+
+> There are many types of Access control Methods for DDB:
+- __DAC Discertionary Access Control__
+   - Based on __Privileges__ and __access rights__
+   - Long been provided by DBMS with __authorization rules__.
+   - Have 3 Actors => Matrix of 2 Dimensions ,  every cell can be shown as a Tuple of 3 Item
+   -  __Authorization__ = (__Subject__ => User or Group that manipulate data , __Operation__=> type of Query , __Object__ => where operation be performed)
+   -  Defined by __Granting__ The Access => *__GRANT__* and __Revoking__ The Access __*REVOKE*__.
+   -  2 Ways to Perform Granting /Revoking
+   -  __Centralized__ => __only one__ can Grant users the Accessibility (admin) and can revoke , no one can than admin
+   -  __Decentralized__ => If User have the access on Data ,he can grant any another user this access and the another can either 
+      -  More Flexible.
+      - So A __Hierarchy__ of Grants => Then if The admin Revoked The access a __recursive revoke__ to all users in hierarchy revoked.
+- MAC __Multilevel or Mandatory__ Access Control => Bel Labadula +> See Wikipedia
+  - Based on __Policies__ that __can't be changed__ by __individual users__.
+  - __increasing__ security using __security levels__.
+  - __More__ Security Levels => __Clearances__
+  - *Top Secret* > *Secret* > *Confidential* > *unclassified*
+  - Access Controlled by 2 Rules 
+  - No Read Up
+      - the subject S can read object of level L <==> Level(S)>= L
+      - protect data from unauthorized disclosure
+          - The Secret Clearance can not Read from the Top Secret data.
+
+  - No Write Down
+      - Subject S is allowed to write an object of Level L <==> Level(S)<=L
+      - protect data from unauthorized change
+          - Subject with top Secret Clearance can only write top secret data
+- __RBAC Role Based Access Control__ => مش فى المنهج
+
+
+## Semantic Data Control
+> ensures that __authorized users__ perform __correct operations__ on the DB, Contributing to the maintenance of the __database integrity__.
+- View Management
+- Security Control
+- Integrity Control
+
+### View Management
+> View is Virtual Relation generated from base Relation/s by a query
+```
+Language = "TSQL" => Microsoft Based
+
+CREATE VIEW Sysan(ENO,ENAME)
+AS SELECT ENO , ENAME
+     From EMP
+     WHERE TITLE = "Syst. Anal."
+```
+
+> not stored as a __base relation__ => Stored as a __query definition__.
+
+> Can Be __Manipulated__ as a __base relation.__
+
+> Used To __restrict Access__.
+
+### DDB Concerns on Views 
+ - Might be Derived from Fragments
+ - View Definition Storage should be treated as a DB Storage.
+ - Might be costly , if Base Relation is Distributed.
+ - To Solve The Processing problem using SnapShots => __"Materialized Views "__
+     - Static Views => as a snapshot it doesn't mirror or reflect the updates of the base relation until it reshotted /Scanned Again from the base.
+     - managed as a temporary relation - only access path is sequential scan => because the user less possible use it again.
+     - __bad selectivity__ Defined as __pre-calculated answers__ => the number of tuples in Base relation doesn't equal the Snapshot
+     - Periodic recalculation => to Recognize the right selectivity and right reflected updates
+
+## Semantic Integrity Control
+> Maintain DB consistency by enforcing a set of constraints defined on the DB.
+
+> Contain 2 Components
+ - Integrity constraint specification
+ - Integrity constraint enforcement
+
+### Classification of Specification Constraints
+
+- Structural Vs Behavioral
+- Procedural vs Declarative
+- Predefined vs Precompiled 
+- General Constraints
+
+|Constraint Type|Definition|Example|
+|:--|:--|:--|
+|__Structural__|Basic Semantic Properties inherent to a data model |Unique key , Not Null ,Type(int , nchar)|
+|__Behavioral__|regulate application behavior| Dependencies in relational model => Functional Dependency (The age is calculated from DOB) or The Relation Dependency (one to one ,....)|
+|__Procedural__|Control embedded in each application program |Triggered , Like The Validation and Security in (Web /mobile app)|
+|__Declarative__|<li>assertion in predicate calculus</li><li>Easy to define constraints</li><li>Definition of DB consistency clear </li><li>inefficient to check assertion for each update<ul><li>limit in search space </li><li>Decrease the number of Data assess/assertion</li><li>Preventive Strategy</li><li>Checking at compile time</li></ul></li> |CHECK  ON \<Relation> WHEN \<Update Type> \<Qualification>|
+|__Predefined__ | In The Schema building(More common constraints of the relational model)|Not Null, Unique Key , Foreign key , Functional Dependency|
+|__Precompiled__|Preconditions that must be specified by all tuples|Defined by The __*CHECK*__|
 
 # Real Time Distributed Database 
 
