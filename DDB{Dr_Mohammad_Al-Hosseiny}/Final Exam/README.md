@@ -57,7 +57,7 @@
   - Biased (Shared Read/ Exclusive Write Locks)
   - 2 Phase Locking
 - The Timestamp Ordering
-- The Optimistic Approach
+- The Optimistic Approach => open the Real time chapter => OCC optimistic concurrency control
 - Hybrid
 
 ## Majority 
@@ -85,7 +85,7 @@
 > It Can be used when some sites are unavailable
 
 ### Drawbacks
-> Requires __2(n/2+1)__ messages for handling the __locks__ and __(n/2+1)__ to handle __unlocks__
+> Requires __2(n/2+1)__ messages for handling the __locks__ and __(n/2+1)__ to handle __unlocks__ => for 1 Transaction event __3(n/2+1)__
 
 > Potential for __Deadlock__ even with single item , each 3 transactions can have locks on 1->3 rd of the replicas of a data
 
@@ -139,7 +139,7 @@ Every Replica contain Q it locks the item
   - Based on __Policies__ that __can't be changed__ by __individual users__.
   - __increasing__ security using __security levels__.
   - __More__ Security Levels => __Clearances__
-  - *Top Secret* > *Secret* > *Confidential* > *unclassified*
+  - <mark>*Top Secret*</mark> > *Secret* > *Confidential* > *unclassified*
   - Access Controlled by 2 Rules 
   - No Read Up
       - the subject S can read object of level L <==> Level(S)>= L
@@ -207,7 +207,7 @@ AS SELECT ENO , ENAME
 |__Procedural__|Control embedded in each application program |Triggered , Like The Validation and Security in (Web /mobile app)|
 |__Declarative__|<li>assertion in predicate calculus</li><li>Easy to define constraints</li><li>Definition of DB consistency clear </li><li>inefficient to check assertion for each update<ul><li>limit in search space </li><li>Decrease the number of Data assess/assertion</li><li>Preventive Strategy</li><li>Checking at compile time</li></ul></li> |CHECK  ON \<Relation> WHEN \<Update Type> \<Qualification>|
 |__Predefined__ | In The Schema building(More common constraints of the relational model)|Not Null, Unique Key , Foreign key , Functional Dependency|
-|__Precompiled__|Preconditions that must be specified by all tuples|Defined by The __*CHECK*__|
+|__Precompiled__|Preconditions that must be specified by all tuples|Defined by The <mark style = "background:RED">__*CHECK*__</mark>|
 
 # Real Time Distributed Database 
 
@@ -242,7 +242,7 @@ AS SELECT ENO , ENAME
 - __Hard-Deadline:__ 
    - Timely and logically correct execution is considered to be __critical__
    - Missing a hard-deadline can result in catastrophic consequences 
-   - Also known as __Safety-Critical__ 
+   - Also known as <mark>__Safety-Critical__ </mark>
    - Example: __data gathered by a sensor__ 
 
 |Hard|Soft|
@@ -256,7 +256,7 @@ AS SELECT ENO , ENAME
 
 - __Time-Triggered (TT)__
   - Systems are initiated as __predefined instances__ 
-  - Assessments of resource requirements and resource availability is required 
+  - Assessments of resource requirements and resource availability is __required__ 
   - TT architecture can provide __predictable behavior__ due to its pre-planed execution pattern.
 - __Event-Triggered (ET)__
    -  Systems are initiated in __response__ to the occurrence of particular __events__ that are possibly caused by the environment
@@ -337,9 +337,10 @@ AS SELECT ENO , ENAME
     - Initial writing takes place on copy of data 
     - Course of action can be decided based on collision
 Optimistic Concurrency Control
-    - __Disadvantages to OCC:__ • The less servers, the more likely collisions  
-    - Collisions always cause rollbacks 
-    - Time wasted while restarting transactions
+    - __Disadvantages to OCC:__ 
+        -  The less servers, the more likely collisions  
+        - Collisions always cause __rollbacks__ 
+        - __Time wasted__ while restarting transactions
 Variations on CC
  - __Neither OCC nor PCC perfect for RTDDBS__ 
    -  Variations/Augmentations frequent: 
@@ -348,9 +349,9 @@ Variations on CC
 ## __Replication Strategies in Real-Time Distributed Databases__
  - Replication 
    - Deadlines must be met 
-   - Fault tolerance 
-   - Failure Transparency 
-   - Replication helps maintain __Quality of Service__ and Data Freshness
+   - Fault tolerance => Some of sites Can update and some can not
+   - Failure Transparency  => as if the site is down , It can be recovered from another site
+   - Replication helps maintain __Quality of Service__ and __Data Freshness__
 
 |Eager Update| Lazy Update|
 |:-|:-|
@@ -388,7 +389,7 @@ Variations on CC
 
 
 - The trend to __larger data sets__ is due to the additional information derivable from analysis of a __single large set of related data__
--  as compared to separate smaller sets with the same total amount of data, allowing correlations to be found to :
+-  as compared to __separate smaller sets__ with the same total amount of data, allowing correlations to be found to :
     - spot business trends
     - determine quality of research
     - prevent diseases
@@ -396,6 +397,7 @@ Variations on CC
     - combat crime
     - determine real-time roadway traffic conditions
 
+## Big Data = Transaction + Interaction +observation
 ## 3 V'S
  - __Volume__ 
  - __Velocity__
@@ -438,7 +440,7 @@ Variations on CC
 
 - Data is begin __generated fast__ and need to be __processed fast__ 
 - Online Data Analytics 
-- Late decisions __missing opportunities__
+- __Late decisions__ => __missing opportunities__
 - Examples 
    - __E-Promotions__: Based on your current location, your purchase history, what you like send promotions right now for store next to you
    - __Healthcare monitoring__: sensors monitoring your activities and body  any abnormal measurements require immediate reaction
@@ -449,11 +451,13 @@ Variations on CC
 ---
 ## Harnessing Big Data
 ![](../../PICS/11.PNG)
-- OLTP: Online Transaction Processing   (DBMSs) 
-- OLAP: Online Analytical Processing   (Data Warehousing) 
-- RTAP: Real-Time Analytics Processing  (Big Data Architecture & technology)
+- OLTP: Online Transaction Processing   (DBMSs) => Operational Databases
+- OLAP: Online Analytical Processing   => (Data Warehousing) 
+- RTAP: Real-Time Analytics Processing  (Big Data Architecture & technology)=> Stream Computing
 - ![](../../PICS/12.PNG)
 - ![](../../PICS/13.PNG)
+- Business Values go high => The Complexity increased
+- Real Time more responsive technique on Big data 
 ---
 ## Big Data Analytics
 - Big data is more __real-time__ in nature than traditional DW applications
@@ -471,27 +475,77 @@ Variations on CC
 - The __bigger the network__, the more __computational resources__.
 
 ![](../../PICS/14.PNG)
+
 ---
 ## Transmission modes AC vs DC
 ![](../../PICS/15.PNG)
 ## Aggregation Techniques
 - __*Center at Nearest Source (CNSDC)*__: All sources send the information first to the source nearest to the sink, which acts as the aggregator.  
-- __*Shortest Path Tree (SPTDC)*__: Opportunistically merge the shortest paths from each source wherever they overlap. 
-__*Greedy Incremental Tree (GITDC)*__: Start with path from sink to nearest source. Successively add next nearest source to the existing tree.
+  
+```
+بيتقطع على انه مجموعة من القطاعات
+كل النقط بتبعت  لنقطة التجميع
+cluster Head
+ اللى اقرب ل 
+Sink
+First to the source 
+Nearest To the Sink
+```
+- __*Shortest Path Tree (SPTDC)*__: Opportunistically merge the shortest paths from each source wherever they overlap.
+
+```
+
+بتشوف انه اقرب طريق لل 
+sink 
+و تبعت عليه بس مشكلتها انه ممكن يتكرر المسار او يحصل
+overlap
+```
+- __*Greedy Incremental Tree (GITDC)*__: Start with path from sink to nearest source. Successively add next nearest source to the existing tree.
+```
+بتحدد المسار و بتحسبه من 
+Sink => Source
+يعنى بتعمل شجرة ال 
+root => Sink
+Leafs => Sources 
+Nodes between => Aggregators
+```
 ![](../../PICS/16.PNG)
 
 ## Data Storage in Sensors Model 
-- The data that is generated at one node is stored at another node determined by the name of the data.
-- Data must be named 
+- The data that is generated at one node is stored at another node determined by __the name__ of the data.
+- Data __must be named__ 
 - Data can be stored and retrieved by name. 
-- Generally speaking, a data-centric storage system provides primitives of the form: 
+- Generally speaking, a __data-centric storage__ system provides primitives of the form: 
    - put (data) and 
    - data = get (name).
-- __External Storage__: The cost of __accessing the event is zero__, while the cost of conveying the data to this external node is nontrivial, and significant energy is expended at nodes near the external node
+- __External Storage__: The cost of __accessing the event is zero__, while the cost of conveying the data to this external node is __nontrivial__, and significant energy is expended at nodes near the external node
     -  Appropriate if the events are accessed far more frequently than generated.
+```
+الوقت انه تتحقق من البيانات يعتبر صفر لانه الداتا عند ال \
+server
+و لكن عشان يحصل على البيانات كم هائل من الطلبات على الداتا فى نفس الوقت
+اهدار للطاقة كبير عند انتاج البيانات
+لذلك هو الأفضل لو الداتا ما بتنتجش أكتر من الأستخدام
+```
 - __Local Storage__: Incurs __zero communication cost__ in storing the data, but incurs a large communication cost –a network flood–in accessing the data.
     -  Feasible when events are accessed less frequently than they are generated. 
+
+```
+ كده هيحفظ الداتا عنده بس المشكلة ان ال 
+ server \
+ لما يتحقق بيحتاج انه يسأل كل ال 
+ nodes 
+  عن البيانات و بالتالى
+  خسارة كبيرة فى الأتصالات عند الاستخدام
+  Zero Communication when Data Generated
+  Huge Communication for accessing
+  لذلك هو الأفضل انى استخدمه لو الداتا بتنتج أكتر ما بتستخدم
+```
 - __Data-Centric Storage__:lies __in between__, incurs __non-zero cost__ both in storing events and retrieving them.
+
+```
+ما بين الاتنين  بس بقدر اتحكم اذا كنت عايز الداتا متاحة أكتر أو تخزين سريع 
+```
 ---
 
 
