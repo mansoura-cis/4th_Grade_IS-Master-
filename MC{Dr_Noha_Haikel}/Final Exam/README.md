@@ -5,9 +5,11 @@
 ## Map Of the Course
 
 ![](PICS/1.PNG)
+
 ![](PICS/19.png)
 
 ![](PICS/2.jpg)
+
 ## The first image
 <li> 1=> False Apart Cells<li> 2 => False (Location Sensetivity method)<li> 3=> True <li> 4 => False (the distance between cells have the same frequency => Clustering ) <li> 5 => False (managed by the network operator) <li> 6=> true <li> 7=> False (Single MSC)<li> 8=> True <li> 9=> False (Not Completely orthognal)
 
@@ -46,7 +48,9 @@ average arrival call
 - 17 => non-functional
 - 18 => Size of the device
 - 19 => database
+- 
 ![](PICS/5.jpg)
+
 ![](PICS/6.jpg)
 
 ## The Fifth image
@@ -64,6 +68,7 @@ average arrival call
 - 31 => LAN
 - 32 => Connect BS , PSTN
 - 33 => The Capacity increased  => The size of the cells in cellular network is kept small because of the need of high capacity in areas with high user density and reduced size and cost of base station electronics.
+  
 ![](PICS/7.jpg)
 
 ```
@@ -79,7 +84,8 @@ average arrival call
 - 6 => True  مش عارف الصح سؤال غريب
 - 7=> True
 - 8 => False Local Update
-- 
+
+
 ![](PICS/9.jpg)
 
 - 1 => 1 - Erlang B
@@ -90,11 +96,13 @@ average arrival call
 - 6 => False  not functioned in the FDMA model
 - 7 => True
 - 8 => Maximum Coverage Area
+
 ![](PICS/10.jpg)
 
 - 18 => Database\
 - 19 => Base Station
 - 20 => HLR
+
 ![](PICS/12.jpg)
 
 - 1=> P1 , P2
