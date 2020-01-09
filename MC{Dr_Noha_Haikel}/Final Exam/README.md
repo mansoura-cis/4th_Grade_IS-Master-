@@ -82,7 +82,7 @@ average arrival call
 - 4 => False => indirect routing to mobile
 -  5=> True
 - 6 => True  مش عارف الصح سؤال غريب
-- 7=> True
+- 7=> False => Visited Network
 - 8 => False Local Update
 
 
@@ -95,12 +95,12 @@ average arrival call
 - 5 => Individual to Individual =>The Frequency band is divided into many channels Each channel is assigned to only a user
 - 6 => False  not functioned in the FDMA model
 - 7 => True
-- 8 => Maximum Coverage Area
+- 8 => All
 
 ![](PICS/10.jpg)
 
 - 18 => Database\
-- 19 => Base Station
+- 19 => Mobile switching center
 - 20 => HLR
 
 ![](PICS/12.jpg)
