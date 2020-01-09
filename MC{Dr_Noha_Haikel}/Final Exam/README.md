@@ -39,7 +39,7 @@ average arrival call
 ## The third image 
 - 9 => Hexagon
 - 10 => C -Move to different cell with call
-- 11 => No intersections
+- 11 => All
 - 12 => Dimension of Mobility => Comparison between __systems__
 - 13 => Location Sensitivity
 - 14 => all
@@ -134,7 +134,9 @@ average arrival call
 - 21 => Care off
 - 22 => Permanent
 
-## Here I am gonna contribute In Shaa Allah
+## The Main Process of Call Setup 
+authentication => Location Management => allocate uplink and the downlink => admission control (Handoff) The Maintenance of a call
+
 
 ## This Course Is Indrotuced by Dr : Noha Hikal
 ### @AhmedKhalil contribution 2019/2020
