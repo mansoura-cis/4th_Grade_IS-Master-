@@ -133,6 +133,12 @@ average arrival call
 - 20 => direct
 - 21 => Care off
 - 22 => Permanent
+![](PICS/21.jpg)
+![](PICS/22.jpg)
+![](PICS/23.jpg)
+![](PICS/24.jpg)
+![](PICS/25.jpg)
+![](PICS/26.jpg)
 
 ## The Main Process of Call Setup 
 authentication => Location Management => allocate uplink and the downlink => admission control (Handoff) The Maintenance of a call
