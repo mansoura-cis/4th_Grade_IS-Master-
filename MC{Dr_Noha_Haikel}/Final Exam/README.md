@@ -8,6 +8,8 @@
 
 ![](PICS/19.png)
 
+## All of these questions not from me , From the Past exams or The Courses Materials
+
 ![](PICS/2.jpg)
 
 ## The first image
@@ -139,6 +141,10 @@ average arrival call
 ![](PICS/24.jpg)
 ![](PICS/25.jpg)
 ![](PICS/26.jpg)
+![](PICS/27.PNG)
+![](PICS/28.PNG)
+![](PICS/29.PNG)
+![](PICS/30.PNG)
 
 ## The Main Process of Call Setup 
 authentication => Location Management => allocate uplink and the downlink => admission control (Handoff) The Maintenance of a call
