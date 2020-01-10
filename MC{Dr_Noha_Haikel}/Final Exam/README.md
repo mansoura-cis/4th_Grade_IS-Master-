@@ -30,7 +30,7 @@ average arrival call
 ![](PICS/20.jpg)
 
 - 4 => Total number of required clusters = 9 cells/Cluster
-- 5 => (The Area of Circle 2* PI * R) => Cell Radius = (Area / PI)^1/2 = (8 /3.14)^1/2 = 1.596 => 1.6 kM
+- 5 => (The Area of Circle PI * R^2) => Cell Radius = (Area / PI)^1/2 = (8 /3.14)^1/2 = 1.596 => 1.6 kM
 - 6 => D = (3*N)^1/2 *R = (3 * 9)^0.5 * 1.6 = 8.3 KMs
 - 7 => Total traffic Channels/Cell = 30000/30 - 20 * 9 =  820 channels
     - Traffic channels/cell = 820/9 = 91 channels/Cell
