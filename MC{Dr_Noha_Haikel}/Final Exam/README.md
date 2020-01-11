@@ -78,12 +78,12 @@ average arrival call
 ```
 ![](PICS/8.jpg)
 
-- 1 => True 
+- 1 => False => Foreign Network 
 - 2 => True
 - 3 => True 
 - 4 => False => indirect routing to mobile
 -  5=> True
-- 6 => True  مش عارف الصح سؤال غريب
+- 6 => False  مش عارف الصح سؤال غريب
 - 7=> False => Visited Network
 - 8 => False Local Update
 
