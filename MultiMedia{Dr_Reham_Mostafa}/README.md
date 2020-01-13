@@ -1,0 +1,19 @@
+# In The Name of Allah 
+
+## The Final Exam In Shaa AllAH Contents of MultiMedia
+|Module| Elements of Study|Download|
+|:--:|:--|:--|
+| Module 1 => Introduction to MM|<li>Intro to MultiMedia <li> Applications of MM <li>Types of MM systems <li> Functionalities of MM Systems <li>Classification |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module1%20Intro%20to%20MultiMedia/README.pdf) |
+| Module 2 Digital Data Acquisition|<li> Analog and Digital Signals <li> Analog to digital conversion <li> Sampling theorem and aliasing <li> Filtering  |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module2%20Digital%20Data%20Aquisition/MM-Lec_2.pdf)|
+| Module 3 => Image as Media|<li> Digital Images <ul> <li> Digital representation of Images <li> Color models<li>Aspect Ratios <li> Digital Image Formats</ul> <li> Digital Videos <li> Digital Audio <li>Graphics  |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module3%20Image/MM_04.pdf) |
+| Module 4 => Video Media|<li> Digital Videos <ul><li>  Representation of digital videos <li>  Color Models of video <li>  Analog Video and Television <li>  Digital Video and Chroma Subsampling </ul><li>  Chroma subsampling Schemes <li> Bitrate and video size => Video Formats <li> Analog Video Formats <li> Digital Video Formats => Video display interface ,Display Ports|[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module4%20video/MM_04-1.pdf)|
+| Module 5 => Sound as a Media|<li> Sound Overview <li> Analog Vs Digital Signal <li>Represintation of Digital Audio<li> Signal to Noise Ratio <li>Filtering <li>Audio file size <li>Commonly Used Audio Formats|[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module5%20Sound/MM_05.pdf) |
+| Module 6 => Overview of Compression |<li>The need for compression <li> Basics of Information Theory <ul><li> Entropy <li> Efficiency </ul> <li>  A taxonomy of compression ( Compression metrics , Rate distortion )<li> Lossless compression <ul><li> Run Length coding <li> Variable-length Coding <ul><li> Huffman coding <li> Arithmetic coding</ul></ul> <li> Dictionary-based coding <li> Lossy compression |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module6%20Compression/MM_06.pdf)|
+| Module 7 => Media Compression (Image)|<li> Overview <li> Redundancy and Relevancy of image data <li> Classes of image compression techniques <li> Lossless Image Coding ( Image Coding Based on Run Length , Dictionary-Based Image Coding (GIF, PNG)) <li> Lossy Image Coding => (TRANSFORM IMAGE CODING =>( DCT Image Coding and the JPEG Standard, JPEG Bit Stream , Drawbacks of JPEG) <li>  WAVELET BASED CODING ( JPEG 2000) <li> JPEG 2000 Versus JPEG |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module6%20Compression/MM_06.pdf)|
+
+# The Book of MultiMedia
+[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/MultimediaBook/MultimediaBookDr.Reham.exe)
+
+
+## This Course Is Indrotuced by Dr : Reham Mostafa
+### @AhmedKhalil contribution 2019/2020
