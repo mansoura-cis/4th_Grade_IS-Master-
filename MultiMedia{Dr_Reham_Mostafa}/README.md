@@ -3,6 +3,7 @@
 ## The Final Exam In Shaa AllAH Contents of MultiMedia
 |Module| Elements of Study|Download|
 |:--:|:--|:--|
+|Revision|Some of Contributions |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Revision%20Version%201.0%20.pdf)|
 | Module 1 => Introduction to MM|<li>Intro to MultiMedia <li> Applications of MM <li>Types of MM systems <li> Functionalities of MM Systems <li>Classification |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module1%20Intro%20to%20MultiMedia/README.pdf) |
 | Module 2 Digital Data Acquisition|<li> Analog and Digital Signals <li> Analog to digital conversion <li> Sampling theorem and aliasing <li> Filtering  |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module2%20Digital%20Data%20Aquisition/MM-Lec_2.pdf)|
 | Module 3 => Image as Media|<li> Digital Images <ul> <li> Digital representation of Images <li> Color models<li>Aspect Ratios <li> Digital Image Formats</ul> <li> Digital Videos <li> Digital Audio <li>Graphics  |[![button](PICS/1.png)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mansoura-cis/4th_Grade_IS-Master-/blob/master/MultiMedia%7BDr_Reham_Mostafa%7D/Module3%20Image/MM_04.pdf) |
