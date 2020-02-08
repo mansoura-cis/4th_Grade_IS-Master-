@@ -1,0 +1,11 @@
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\bin\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.exe
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\bin\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.dll
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\obj\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.AssemblyInfoInputs.cache
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\obj\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.AssemblyInfo.cs
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\obj\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.dll
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\obj\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.pdb
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\bin\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.deps.json
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\bin\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.runtimeconfig.json
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\bin\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.runtimeconfig.dev.json
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\bin\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.pdb
+E:\CISISDEPARTMENT\4th_Grade_IS-Master-\Projects\ANDGatePerceptionNeuralNetwork\obj\Debug\netcoreapp3.0\ANDGatePerceptionNeuralNetwork.csprojAssemblyReference.cache
