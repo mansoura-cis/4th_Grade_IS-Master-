@@ -18,4 +18,7 @@
 |__WEEK 10__| :x: | :x: | :x: | :x: | :x: |
 |__WEEK 11__| :x: | :x: | :x: | :x: | :x: |
 |__WEEK 12__| :x: | :x: | :x: | :x: | :x: |
+
+## Data Mining Prerequests
+
 ## © Ahmed Khalil 2019/2020 
