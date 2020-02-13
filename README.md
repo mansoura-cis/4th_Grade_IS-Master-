@@ -19,6 +19,17 @@
 |__WEEK 11__| :x: | :x: | :x: | :x: | :x: |
 |__WEEK 12__| :x: | :x: | :x: | :x: | :x: |
 
-## Data Mining Prerequests
+## Data Mining Practical Environment Configuration:
+
+- The study of Data Mining and Data Analysis best tools and choices:
+
+    - Anaconda Distribution (an open source distribution and a framework to merge the tools, packages, scripting languages to ease working with {AI, Data science, ML,....})
+
+        - You can download it from [here](https://www.anaconda.com/distribution/#download-section)
+    - Some Python packages { Pandas, Sciket-learn, numpy, matplotlibrary } => already Installed with anaconda
+    - python notebook => Jupyter Notebook and lab
+        - already installed { Just open the Anaconda}
+    
+
 
 ## © Ahmed Khalil 2019/2020 
