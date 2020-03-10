@@ -1,0 +1,117 @@
+#Exersize 1.1
+##Vectors
+```{r}
+x <- c(4,2,6)
+x
+y <- c(1,0,-1)
+y
+length(x)
+sum(x)
+sum(x^2)
+x+y
+x*y
+x - 2
+x^2
+```
+
+##Sequences
+```{r}
+seq(4,10,by=2)
+seq(3,30,length=10)
+seq(6,-4,by=-2)
+```
+##Repeating
+```{r}
+rep(2,4)
+rep(c(1,2),4)
+rep(1:4,rep(3,4)) 
+```
+
+```{r}
+rep(6,6)
+rep(c(5,8),3)
+rep(c(5,8), rep(4,2))
+
+```
+
+#Ex 1.2
+##Inside vector
+```{r}
+x<- c(5,9,2,3,4,6,7,0,8,12,2,9) 
+x[2]
+x[2:4]
+x[c(2,3,6)]
+x[c(1:5,10:12)]
+x[-(10:12)]
+```
+##Challenge
+```{r}
+y<-c(33,44,29,16,25,45,33,19,54,22,21,49,11,24,56)
+Profit = 
+shop1 <- y[seq(1,15,by=3)]
+shop2 <- y[seq(2,15,by=3)]
+shop3 <- y[seq(3,15,by=3)]
+
+boxplot(y,shop1, shop2, shop3)
+```
+```{r}
+print('Sum of profit')
+sum(y)
+sum(shop1);sum(shop2);sum(shop3)
+qqnorm(shop1);qqline(shop1)
+qqnorm(shop2);qqline(shop2)
+qqnorm(shop3);qqline(shop3)
+
+```
+
+
+
+```{r}
+days <- array(y , dim=c(5,3))
+days
+print('The Day\'s profit')
+sum(days[1,]);sum(days[2,]);sum(days[3,]);sum(days[4,]);sum(days[5,])
+
+```
+```{r}
+boxplot.matrix(days,use.cols = FALSE)
+```
+
+
+
+##Matrices
+```{r}
+
+x = array(c(3,-1,2,1) ,dim=c(2,2))
+y = array(c(1,0,4,1,0,-1) ,dim=c(2,3))
+x
+y
+print('2*x = ');(2*x)
+print('x*x = ');(x*x)
+x%*%x
+x%*%y
+
+```
+
+
+
+
+
+```{r}
+A <- matrix(c(1,2,3,4,5,6), nrow = 2, ncol = 3, byrow = F)
+B <- matrix(c(1,2,3,4), nrow = 2, byrow = T)
+A
+B
+solve(B)
+```
+
+
+
+
+
+
+
+
+
+
+
