@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0078)http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php -->
+<HTML><HEAD><TITLE>UNBC Geog204: Lecture 2: Cleaning Spatial Data</TITLE><!-- InstanceBegin template="/Templates/geog204.dwt" codeOutsideHTMLIsLocked="false" --><!-- InstanceBeginEditable name="doctitle" --><!-- InstanceEndEditable -->
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><LINK 
+rel=stylesheet type=text/css 
+href="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/main.css">
+<META name=GENERATOR content="MSHTML 9.00.8112.16506"></HEAD>
+<BODY><!-- InstanceBeginEditable name="Main Contents" -->
+<H2 align=center><FONT color=#990000><STRONG>Files to Features<BR>Clean data - 
+Topology?</STRONG></FONT></H2>
+<DIV align=right><FONT size=1><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print" 
+target=_blank><IMG border=0 align=absMiddle 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/icon_print.gif" 
+width=17 height=13></A> <A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print" 
+target=_blank>Printer Friendly</A> </FONT></DIV>
+<HR SIZE=1>
+
+<H2>Topics</H2>
+<UL>
+  <LI><A 
+  href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print#review">Review</A> 
+
+  <LI><A 
+  href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print#clean_data">Cleaning 
+  Data</A> 
+  <LI><A 
+  href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print#topology">Topology</A> 
+  </LI></UL>
+<P>&nbsp;</P>
+<HR SIZE=1>
+
+<P>
+<H2><A name=review></A>Review</H2>
+<P>We have investigated varying data types of spatial features and the different 
+descriptive formats that relate to these features. There is a pattern of 
+following information (or in this case digital data) from file types and where 
+they are located through to managing layers in our software view (i.e. workspace 
+canvas).</P>
+<H3>Files</H3>
+<P><STRONG>Fig 1: File tree layout:</STRONG><BR><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/filetree.gif"><IMG 
+border=0 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/filetree.png" 
+width=650 height=243></A> </P>
+<P>Files located on the server with GIS set (ArcView) in Triplets (or more). We 
+can load shape files, as well as a few others directly into ArcView. We should 
+always be careful not to seperate any of the other files associated with the 
+*.shp files. 
+<H3>Layers
+<P></P></H3>
+<P><B>Fig 2: Raw data imports - Files to Layers</B></P>
+<P><B>METDATA SECTION</B><BR>"POSTCODE","Postal 
+Code"<BR>"LAT","Latitude"<BR>"LON","Longitude"<BR>"CTNAME","Census tract 
+name"</P>
+<P><B>EVENT THEME 
+SECTION</B><BR>"POSTCODE","LAT","LON","CTNAME"<BR>"V1H1A1",53.872327,-122.782974,0004.00<BR>"V1H1A1",53.873533,-122.780831,0004.00<BR>"V1H1A2",53.876089,-122.783372,0004.00<BR>"V1H1A3",53.877017,-122.781113,0004.00<BR>"V1H1A4",53.876796,-122.780557,0004.00<BR>"V1H1A5",53.873618,-122.784474,0004.00<BR>"V1H1A6",53.920479,-122.854294,0004.00<BR>"V1H1A7",53.874625,-122.785061,0004.00<BR>"V1H1A8",53.920479,-122.854294,0004.00<BR>"V1H1A9",53.874123,-122.781300,0004.00<BR>"V1H1B1",53.920479,-122.854294,0004.00<BR>"V1H1B2",53.874123,-122.781300,0004.00<BR>"V1H1B3",53.874465,-122.782884,0004.00<BR>"V1H1B3",53.874705,-122.783409,0004.00<BR>"V1H1B4",53.876167,-122.779229,0004.00<BR></P>
+<P>The above file (or a cleaned version of it) can be used to create a data 
+layer in ArcVeiw. It then can be saved as a shape file. Other spatial layers can 
+be added to created maps or perform queries.</P>
+<P><B>Fig 3: Spatial Data Layers and Feature Types</B><BR><A 
+href="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/spaitiallyrs.jpg"><IMG 
+border=0 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/spaitiallyrs.jpg" 
+width=400 height=375></A> </P>
+<P>These data layers are made up of (or contain features) that represent 
+geographical features. These features are divided into feature types (such as 
+points, lines or polygons).</P>
+<H3>Tables</H3>
+<P><STRONG>Fig 4: EA Table - unique identifiers<BR><IMG 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/eatable.gif" 
+width=515 height=312> </STRONG></P>
+<P>The above table is associated with a spatial data layer derived from a 
+Statistics Canada Boundary file. This table contains attribute information that 
+can be connected, through a Unique ID (<STRONG>unique feature 
+identifier</STRONG>), to other attribure tables. It is also important not to mix 
+up the attributes (rearrange the contents of each row) so a connection to the 
+individual spatial is maintained. The connecting ID for the feature and the 
+table entry is hidden so all joins should be carried out in ArcView (we will 
+discuss this as we perform more table joins in tutorials and labs).</P>
+<P>The above table has an <STRONG>item</STRONG> (field ro column name) called 
+eauid. This would be the unique feature identifier we would use to connect more 
+stats can information to the dataset. </P>
+<H3>Metadata</H3>
+<P>if we look inside a file called postal.meta that is associated with a shape 
+file called postal.shp we might see this in it content: </P>
+<P><STRONG>Fig 5: metadata from postal codes</STRONG></P>
+<P>File creation date: January 12, 2005<BR>Last edited January 17, 
+2005<BR>original file created: Scott Emmons , GIS lab UNBC<BR>last edited: Scott 
+Emmons, GIS lab UNBC<BR>particulars: Headers<BR>headers:<BR>"POSTCODE","Postal 
+Code", char<BR>"LAT","Latitude", float<BR>"LON","Longitude", 
+float<BR>"CTNAME","Census tract name", char<BR>comments: This was a file created 
+for generating a point layer describing postal codes for Prince George, B.C. 
+Canada.</P>
+<P>It is important to create and maintain "*.meta" files (or something like 
+them) to establish a greater knowledge of where and who created the data you and 
+others are to work with.</P>
+<P><EM>Can you think of other pieces of information that would be usefull in 
+this meta file?</EM></P>
+<P><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print#top">TOP</A></P>
+<HR SIZE=1>
+
+<H2><A name=clean_data></A>Cleaning Data</H2>
+<P>In the last lab we were presented with methods for creating features in 
+ArcView. We could use the drawing tools that come with the software or we could 
+use extensions designed for completing different tasks. </P>
+<P>- We saw that we can clean up a text file we download from the web so it can 
+be used in a GIS.<BR>- We also repaired line layers using the NWF/DEM extension 
+in order to create 
+polygons.<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method 
+of fixing data such as we did in the last lab is called <STRONG>"building and 
+cleaning"</STRONG></P>
+<P>This terminology refers to the way ArcInfo stores and manipulates spatial 
+layers. This system of data modelling has changed in recent years, but we will 
+still employ many of the methods and terms used for creating and inspecting 
+spatial data.</P>
+<P>The following illustration gives some examples of how data that is clean and 
+some that is not. </P>
+<P><B>Fig 6: Cleaning Varying Spatial data errors</B><BR><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/cleanillustration.pdf">cleanillustration.pdf</A> 
+</P>
+<P>&nbsp;</P>
+<P><STRONG>This Week</STRONG></P>
+<P>In the tutorial we will be learnig what data and services are present at the 
+UNBC Library and the Statistics Canada webg site. In the lab we will use some of 
+these data to create linkages to Stats Can boundary files (adn seeing what 
+problems result from this data manipulation) A web search can be done on 
+spaghetti data, discrete data and building - cleaning GIS data. Building and 
+cleaning can be refernced at the arcinfo help prompt (this will be discussed in 
+this weeks lab).</P>
+<P><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print#top">TOP</A></P>
+<HR SIZE=1>
+
+<H2><A name=topology></A>Topology - A brief introduction</H2>
+<P>We now want to expand upon our knowledge of spatial feature types and 
+descriptive data for combining them to make up GIS layers.&nbsp; We have talked 
+about how different descriptive data formats such as event themes and generate 
+data can be manipulated to create both spatial features and attribute 
+data.&nbsp; Today we want to separate the spatial elements (vector data - 
+points, line polygons) from the descriptive data (data to be used for attribute 
+information) and get a better understanding of how differing GIS strategies 
+(software driven) provide for relationships amongst these spatial 
+elements.&nbsp; We will then return to the methods of how spatial elements are 
+linked to attribute information. <BR></P>
+<H3>Topology defined</H3>
+<P>There are many definitions of this concept, so as in many cases a good start 
+may be to type "GIS topology definition" at the google prompt in your browser. 
+</P>
+<P><STRONG><I>Scott's definition - a spatial feature</I> </STRONG>
+<P><EM>A bounded geometric object represented in the Cartesian 
+plane</EM>.&nbsp;&nbsp; This may seem to be a simple definition but the spatial 
+elements we use in ArcView are simple.&nbsp; The manipulation and categorization 
+of these elements is constantly evolving in GIS and this can add to the 
+confusion associated with understanding simple geographic features. 
+<P><EM><STRONG>Scott's definintion - Topology </STRONG></EM>: I perceive 
+topology as:<EM> the awareness a spatial feature gains with respect to adjacent 
+features within its layer</EM>.&nbsp; This translates to a structured system by 
+which all spatial elements in a layer are connected in some fashion to each 
+other, and with this connectivity the whole layer can be categorized, queried, 
+manipulated and stored more efficiently (sounds like the Borg Collective). </P>
+<P><B>Building Topology</B> 
+<P>To build topology, lines are interpreted in such a manner as to give rise to 
+connected, contiguous and possibly filled area features.&nbsp; Follow Scott 
+through the the next sections examples and illustrations on the chalk board to 
+see the relationships between the parts that make up GIS and how topology helps 
+add form and structure.&nbsp; We will look at what ArcInfo considers topology 
+and how ArcView functions without using topology. 
+<H3>Examples of topology theory </H3>
+<P>Topology is usually held in a GIS through a series of related attribute 
+tables. Each feature, line or polygon, gains a entry for items that relate to 
+topology. For instance a line will have entries in the from node and a to node 
+items in an arc attribute table in ArcInfo. This arrangement of tables allows 
+the software to determine what lines are connected to another. If the spatial 
+layer has been <EM>built</EM> as a polygon layer a line will index which 
+polygons it contributes to and the direction it navigates around it. </P>
+<P>ArcView does not make use of topology however, and it is up to the GIS user 
+to make sure that the data is clean enough to employ mathematical and 
+trigonometry principles to their spatial data. 
+<P>By working through examples from other universities and ESRI, we will get a 
+better understanding of topology and how we will use it in this class. Scott 
+will go through each one of these links.</P>
+<P><A href="http://dusk.geo.orst.edu/gis/lec05.html">Oregon State advanced 
+class<BR></A>In this example, the topolgical model employed in ArcInfo is 
+explained. 
+<P><BR><A 
+href="http://www.ordnancesurvey.co.uk/oswebsite/gisfiles/section2/page17.html">Ordance 
+Survey</A> <BR>In this short example, the Ordance Survery of England illustrates 
+the key factors utilized in many other forms of topology. We have to pay 
+attention to some of these illustrations as understanding them will keep is in 
+check for creating and maintaining clean spatial data. 
+<P><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/arcgis-topology.pdf">ESRI 
+description of the evolution of topology</A> <BR>This article is a bit heavy for 
+this class, but by ignoring the references to software and other acronyms, we 
+can get a picture of how and why ArcView shape files were created and used. 
+<P><BR><A href="http://www.esri.com/news/arcuser/0401/topo.html">David M. 
+Theobald (Colorado State - written for ESRI -Topology and ArcView)</A> <BR>This 
+is a concise article that gives direction as to how Shape files and ArcView in 
+regards to topology. 
+<P>
+<P><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print#top">TOP</A></P>
+<HR SIZE=1>
+
+<P align=center><FONT color=#990000><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/classical/index.php"><IMG 
+border=0 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/first.gif" 
+width=25 height=19></A><STRONG><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/classical/index.php"><IMG 
+border=0 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/arrow_left.gif" 
+width=25 height=20></A></STRONG> <A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print#top"></A><STRONG><FONT 
+color=#990000><STRONG>&nbsp;</STRONG></FONT></STRONG><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/files_features/index.php?print#top"><IMG 
+border=0 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/ball_top1.gif" 
+width=30 height=25></A><STRONG><FONT 
+color=#990000><STRONG>&nbsp;&nbsp;</STRONG></FONT></STRONG><STRONG><FONT 
+color=#990000><STRONG><FONT color=#990000><STRONG><FONT 
+color=#990000><STRONG><FONT color=#990000><STRONG><FONT color=#990000><STRONG><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/topology/index.php"><IMG 
+border=0 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/arrow_right.gif" 
+width=25 height=20></A></STRONG></FONT></STRONG><FONT color=#990000><A 
+href="http://www.gis.unbc.ca/courses/geog204/lectures/lastlecture/index.php"><IMG 
+border=0 
+src="UNBC%20Geog204%20Lecture%202%20Cleaning%20Spatial%20Data_files/last.gif" 
+width=25 
+height=19></A></FONT></FONT></STRONG></FONT></STRONG></FONT></STRONG></FONT></STRONG></FONT></P><!-- InstanceEndEditable --><!-- InstanceEnd --></BODY></HTML>

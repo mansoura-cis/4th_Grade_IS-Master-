@@ -1,0 +1,20 @@
+```{r}
+ls()
+remove(y)
+ls()
+
+
+```
+
+
+```{r}
+?sqrt
+```
+
+```{r}
+
+A= matrix(1:9, nrow = 3 , ncol = 3)
+A
+data.frame(c(1,2,3) , c("a","b", "c"))
+hist(data.frame(c(1,2,3) , c("a","b", "c")))
+```

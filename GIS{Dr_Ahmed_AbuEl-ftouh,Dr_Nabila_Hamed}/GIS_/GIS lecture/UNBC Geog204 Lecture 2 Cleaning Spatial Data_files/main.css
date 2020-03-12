@@ -1,0 +1,99 @@
+BODY {
+	LETTER-SPACING: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 13px
+}
+A.mbar {
+	FONT-FAMILY: Arial; COLOR: #ffffcc; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.cbar {
+	FONT-FAMILY: Arial; COLOR: #6a6300; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+A:hover {
+	COLOR: #ff0000
+}
+TH {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px
+}
+.bodystyle {
+	FONT-FAMILY: Arial; FONT-SIZE: 13px
+}
+.small {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 9px
+}
+.medium {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px
+}
+.big {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 16px
+}
+.xbig {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 24px
+}
+.expanded {
+	LINE-HEIGHT: 24px; LETTER-SPACING: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px
+}
+.justified {
+	TEXT-ALIGN: justify; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.footer {
+	LINE-HEIGHT: normal; FONT-FAMILY: "Times New Roman", Times, serif; COLOR: #6f6f00; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.box1 {
+	BORDER-BOTTOM: #666666 solid; BORDER-LEFT: #cccccc solid; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffcccc; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; BORDER-TOP: #cccccc solid; BORDER-RIGHT: #666666 solid; PADDING-TOP: 3px
+}
+.box2 {
+	BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; PADDING-BOTTOM: 3px; FONT-STYLE: italic; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid; WORD-SPACING: 2pt; PADDING-TOP: 3px
+}
+H1 {
+	FONT-FAMILY: "Times New Roman", Times, serif; COLOR: #990000
+}
+H2 {
+	FONT-FAMILY: "Times New Roman", Times, serif; COLOR: #990000; FONT-WEIGHT: bold
+}
+TABLE {
+	BORDER-BOTTOM: thin; BORDER-LEFT: thin; BORDER-TOP: thin; BORDER-RIGHT: thin
+}
+.ctable {
+	MARGIN-RIGHT: 5px
+}
+H3 {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #016144; FONT-WEIGHT: bold
+}
+.heading {
+	BACKGROUND-COLOR: #e6e8c1; FONT-FAMILY: Arial; COLOR: #006600; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.mtd {
+	LINE-HEIGHT: 20px; FONT-FAMILY: Arial; FONT-SIZE: 13px
+}
+TD {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 13px
+}
+.toptable {
+	BORDER-BOTTOM: #e6e8c1; BORDER-LEFT: #e6e8c1; BORDER-TOP: #e6e8c1; BORDER-RIGHT: #e6e8c1
+}
+.sidetable {
+	BACKGROUND-COLOR: #eff0d9; PADDING-LEFT: 2px; PADDING-TOP: 2px
+}
+.side {
+	BACKGROUND-COLOR: #e6e8c1
+}
+.cback {
+	BACKGROUND-COLOR: #e6e8c1; PADDING-LEFT: 1px
+}
+.mtable {
+	BACKGROUND-COLOR: #fffcf4; PADDING-LEFT: 4px; PADDING-RIGHT: 2px; PADDING-TOP: 3px
+}
+.ndec {
+	COLOR: #6f6f00; TEXT-DECORATION: none
+}
+.heading1 {
+	BACKGROUND-COLOR: #cc9900; COLOR: #990000
+}
+A.inlink {
+	COLOR: #6f6f00; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+}
+A {
+	COLOR: #6a6300
+}
+.mainback {
+	BACKGROUND-IMAGE: url(../images/layer2.jpg); BACKGROUND-ATTACHMENT: fixed; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center center; VISIBILITY: visible; background-height: 300; background-width: 300; FinishY: ?)
+}
