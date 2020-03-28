@@ -54,6 +54,11 @@
 - CLUSTER ANALYSIS 
 - OUTLIER ANALYSIS
 
+### Mining Tasks
+
+> __Descriptive Tasks__ : Characterize properties of the data in a target data set. e.g., (classification, regression, anomalies/outliers detection)
+
+> __Predictive Tasks__ : Perform induction on the current data in order to make predictions.  (e.g., clustering, association rule discovery, sequential pattern discovery)
 
 
 
